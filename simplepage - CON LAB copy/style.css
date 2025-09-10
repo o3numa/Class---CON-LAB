@@ -1,0 +1,87 @@
+/* Headings */
+h1 {
+  color: rosybrown;
+  font-size: 24px; /* much smaller */
+  text-align: center;
+  margin: 12px 0 6px;
+}
+
+h2 {
+  color: lightgreen;
+  font-size: 28px; /* fixed from 328px */
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+h3 {
+  text-align: center;
+  margin: 12px 0 8px;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+a {
+  background-color: mediumaquamarine;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: #4dd4b2;
+}
+
+/* Page layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Background canvas holder (Three.js scene goes here) */
+#cosmic-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1; /* behind everything */
+}
+
+/* Content wrapper */
+.content {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 12px 16px 48px;
+  position: relative;
+  z-index: 2; /* keep above background */
+}
+
+/* Paragraph styling */
+p {
+  line-height: 1.6;
+  margin: 12px auto 16px;
+  color: brown; /* <-- brown text */
+}
+
+/* Image styling */
+img {
+  display: block;
+  margin: 16px auto;
+  max-width: 300px;
+  border-radius: 6px;
+}
+
+/* Videos side by side, smaller */
+.video-row {
+  display: flex;
+  gap: 10px;
+  margin: 12px auto 24px;
+}
+
+.video-row video {
+  flex: 1;
+  height: 200px;     /* smaller so both fit neatly */
+  object-fit: cover; /* crop without stretching */
+  border-radius: 6px;
+  display: block;
+}
